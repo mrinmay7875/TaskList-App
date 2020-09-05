@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+.main-container{
+    border: solid black 2px;
+
+    margin: 0 auto;
+    text-align:center;
+
+    margin: 10%
+}
+
+.list-of-task-section{
+    border: solid red 2px;
+
+    margin: 10px 35%;
+}
+
+/* 
+.task-list-item{
+    background-color: bisque;
+} */
+.task-list-item-flexContainer{
+    display: flex;
+    border: solid green 2px;
+justify-content: space-between;
+background-color: bisque;
+}
+
