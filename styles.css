@@ -23,14 +23,9 @@ body{
     margin: 10px 35%;
 }
 
-/* 
+
 .task-list-item{
     background-color: bisque;
-} */
-.task-list-item-flexContainer{
-    display: flex;
-    border: solid green 2px;
-justify-content: space-between;
-background-color: bisque;
+    border: solid rgb(7, 211, 109) 2px;
 }
 
