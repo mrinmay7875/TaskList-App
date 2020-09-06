@@ -4,12 +4,19 @@ const deleteTaskBtn = document.querySelector(".clear-task-btn");
 
 const taskList=document.querySelector(".task-list")
 
-let taskArray = [];
+// let taskArray = [];
 function addNewTask() {
   // Fetch the new task from Input value
   let newTask = taskInputField.value;
   // Create an li element for the new task and 
   // assign the className
+  if (newTask == "" || newTask === null || newTask === undefined) {
+    alert("Please enter a valid task...");
+  }
+  else
+  {
+
+
   let newListItemElement = document.createElement("li");
   newListItemElement.className = "task-list-item";
   // Create a text node and append into the <p> element</p>
@@ -30,6 +37,7 @@ taskList.appendChild(newListItemElement);
 
 
   addDeleteEvents();
+}
 }
 // Add new task addEventListener
 addTaskBtn.addEventListener("click", addNewTask);
