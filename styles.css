@@ -1,31 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: grey;
+body {
+  background-color: #dfd3c3;
 }
 
-.main-container{
-    border: solid black 2px;
+.main-app-heading {
+  font-family: "Ubuntu", sans-serif;
+}
+.task-input-field {
+    border: solid white 3px;
+  border-radius: 4px;
 
-    margin: 0 auto;
-    text-align:center;
-
-    margin: 10%
+  margin: 5px 10px;
+}
+.task-input-field:focus {
+  background-color: lightgrey;
 }
 
-.list-of-task-section{
-    border: solid red 2px;
+.task-inputsection {
+  display: flex;
+  justify-content: center;
 
-    margin: 10px 35%;
+  /* min-width: 80%; */
 }
 
-
-.task-list-item{
-    background-color: bisque;
-    border: solid rgb(7, 211, 109) 2px;
+.add-task-btn {
+  margin: 5px 10px;
 }
 
+.delete-task-btn {
+  margin: 5px 10px;
+}
+.task-list-heading {
+}
+
+.main-container {
+  background-color: #c7b198;
+
+  text-align: center;
+
+  margin: 5% 30%;
+  padding: 10px 10px;
+
+  box-shadow: 3px 4px 2px #8d93ab;
+}
+
+.list-of-task-section {
+  /* border: solid red 2px; */
+
+  margin: 10px 5%;
+  min-width: 35%;
+}
+
+.task-list-item {
+  background-color: #d8d3cd;
+  border-radius: 4px;
+
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 10px 5px;
+}
+
+.delete-icon {
+  position: relative;
+  left: 5%;
+  float: right;
+}
+
+.task-list {
+  display: flexbox;
+  /* flex-flow: column nowrap; */
+  color: black;
+  justify-content: space-between;
+  min-width: 50%;
+}
+
+.newTaskContent {
+  margin: 10px 10px;
+  padding: 5px 5px;
+  color: blue;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+  background-color: darkgray;
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
