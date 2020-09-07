@@ -88,10 +88,15 @@ function deleteSingleTask(event) {
 // This function fetches tasks from localStorage and show them in browser
 function displayTasks() {
   taskListArray = fetchTasksFromLocalstorage();
-  taskList.innerHTML="";
+  taskList.innerHTML = "";
   if (taskListArray.length == 0) {
     // alert("No tasks found");
+
     taskList.textContent = "No tasks found!";
+
+   setTimeout(() => {
+     taskList.textContent="";
+   }, 1000);
   } else {
     taskListArray.forEach((element) => {
       createNewListItemElement(element);
