@@ -6,11 +6,21 @@
     <title>Task List App</title>
 
     <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootsrtap CDN link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <!-- Font awesome CDN link -->
     <link
@@ -19,6 +29,8 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <!-- Inserting favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- Top container section -->
@@ -27,39 +39,42 @@
 
       <!-- Task input field -->
       <div class="task-inputsection">
-
-          <input
+        <input
           class="task-input-field"
           type="text"
           name=""
           id=""
           placeholder="Add new tasks here..."
-          />
-          
-          <!-- Add task button -->
-          <button class="add-task-btn btn btn-primary" type="submit">Add task</button>
-          <!-- Clear Task button -->
-          <button class="delete-task-btn btn btn-danger" type="submit">Delete All task</button>
-          
-        </div>
+        />
 
-
+        <!-- Add task button -->
+        <button class="add-task-btn btn btn-primary" type="submit">
+          Add task
+        </button>
+        <!-- Clear Task button -->
+        <button class="delete-task-btn btn btn-danger" type="submit">
+          Delete All task
+        </button>
+        <!-- Show All task button -->
+        <button class="show-all-task-btn btn btn-success" type="submit">
+          Show All task
+        </button>
+      </div>
 
       <!-- List of task section -->
       <div class="list-of-task-section">
         <!-- //List of tasks -->
         <h3 class="task-list-heading">List of tasks</h3>
         <ul class="task-list">
-         
-            <!-- <li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li>
+          <!-- <li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li>
             <li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li><li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li> -->
-         
         </ul>
       </div>
     </div>
     <!-- Footer section -->
-    
+
     <footer class="footer">Made with ❤️ by Mrinmay Santra</footer>
+
     <script src="/script.js"></script>
   </body>
 </html>

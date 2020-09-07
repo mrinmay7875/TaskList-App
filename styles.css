@@ -5,12 +5,12 @@
 }
 
 .add-task-btn {
-  margin: 5px 10px;
-font-family: 'Cairo', sans-serif;
+  margin: 5px 5px;
+  font-family: "Cairo", sans-serif;
 }
 
 .add-task-btn:hover {
-    background-color: #033653;
+  background-color: #033653;
 }
 
 body {
@@ -18,12 +18,12 @@ body {
 }
 
 .delete-task-btn {
-  margin: 5px 10px;
-font-family: 'Cairo', sans-serif;
+  margin: 5px 5px;
+  font-family: "Cairo", sans-serif;
 }
 
 .delete-task-btn:hover {
-    background-color: #7a0000
+  background-color: #7a0000;
 }
 
 .delete-icon {
@@ -61,12 +61,11 @@ font-family: 'Cairo', sans-serif;
   min-height: 60vh;
   text-align: center;
 
-  margin: 5% 30%;
+  margin: 5% 25%;
   padding: 10px 10px;
 
   box-shadow: 3px 4px 2px #8d93ab;
 }
-
 
 /* Media queries for mobile screen */
 @media screen and (max-width: 600px) {
@@ -82,11 +81,19 @@ font-family: 'Cairo', sans-serif;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.show-all-task-btn {
+  margin: 5px 5px;
+  font-family: "Cairo", sans-serif;
+}
+.show-all-task-btn:hover {
+  background-color: rgb(15, 104, 15);
+}
+
 .task-input-field {
   border: solid white 3px;
   border-radius: 4px;
 
-  margin: 5px 10px;
+  margin: 5px 5px;
 }
 .task-input-field:focus {
   background-color: lightgrey;
@@ -113,5 +120,4 @@ font-family: 'Cairo', sans-serif;
   color: black;
   justify-content: space-between;
   min-width: 50%;
-
 }
