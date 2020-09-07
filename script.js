@@ -50,7 +50,7 @@ function addNewTask() {
   let newTask = taskInputField.value;
 
   // Create an li element for the new task and assign the className
-  if (newTask === ""|| newTask == null || newTask == undefined) {
+  if (newTask === "" || newTask == null || newTask == undefined) {
     alert("Please enter a valid task...");
   } else {
     //This function will take the new task as the input and return us a list item element and add it in the tasklist array
@@ -60,14 +60,24 @@ function addNewTask() {
     taskListArray.push(newTask);
     //Store the array of tasks in the localStorage
     localStorage.setItem("tasks", JSON.stringify(taskListArray));
+    taskInputField.value = "";
   }
 }
 //==========================================================================
 
 //Delete All task button
 function deleteAllTasks() {
-  taskList.innerHTML = "";
-  localStorage.clear();
+  //Checking if there is any task to be deleted
+  if (fetchTasksFromLocalstorage().length != 0) {
+    if (confirm("Warning! This will delete all the tasks. Are you sure ?")) {
+      taskList.innerHTML = "";
+      localStorage.clear();
+      taskInputField.value = "";
+    } else {
+    }
+  } else {
+    alert("You dont have any tasks to delete!");
+  }
 }
 
 //Delete a single task
@@ -78,6 +88,7 @@ function deleteSingleTask(event) {
 // This function fetches tasks from localStorage and show them in browser
 function displayTasks() {
   taskListArray = fetchTasksFromLocalstorage();
+  taskList.innerHTML="";
   if (taskListArray.length == 0) {
     // alert("No tasks found");
     taskList.textContent = "No tasks found!";

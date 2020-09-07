@@ -32,6 +32,10 @@ body {
   float: right;
 }
 
+.delete-icon:hover{
+  color: blue;
+}
+
 .footer {
   background-color: darkgray;
   margin: 0 auto;
