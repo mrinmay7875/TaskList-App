@@ -107,7 +107,5 @@ addTaskBtn.addEventListener("click", addNewTask);
 
 //Adding deleteAllTask event listener to the Delele All Task button
 deleteTaskBtn.addEventListener("click", deleteAllTasks);
-
-//When we refresh the page or open the page after closing the page then it will show you all the tasks.
-
+// This button fetch all the tasks from the localStorage and display on the page
 showAllTaskBtn.addEventListener("click", displayTasks);
