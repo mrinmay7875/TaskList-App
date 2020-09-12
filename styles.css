@@ -14,7 +14,11 @@
 }
 
 body {
-  background-color: #dfd3c3;
+  /* background-color: #dfd3c3; */
+background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .delete-task-btn {
@@ -37,7 +41,11 @@ body {
 }
 
 .footer {
-  background-color: darkgray;
+  /* background-color: darkgray; */
+  background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 0 auto;
   text-align: center;
 
@@ -61,14 +69,20 @@ body {
 }
 
 .main-container {
-  background-color: #c7b198;
+background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  
   min-height: 60vh;
   text-align: center;
 
   margin: 5% 25%;
   padding: 10px 10px;
 
-  box-shadow: 3px 4px 2px #8d93ab;
+  box-shadow: 2px 2px 2px 2px #1132b6;
+  border-radius: 10px;
 }
 
 /* Media queries for mobile screen */
