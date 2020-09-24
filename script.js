@@ -73,8 +73,7 @@ function deleteAllTasks() {
       taskList.innerHTML = "";
       localStorage.clear();
       taskInputField.value = "";
-    } else {
-    }
+    } else {}
   } else {
     alert("You dont have any tasks to delete!");
   }
@@ -82,7 +81,11 @@ function deleteAllTasks() {
 
 //Delete a single task
 function deleteSingleTask(event) {
-  event.target.parentElement.remove();
+
+
+ event.target.parentElement.remove();
+
+
 }
 
 // This function fetches tasks from localStorage and show them in browser
@@ -94,9 +97,9 @@ function displayTasks() {
 
     taskList.textContent = "No tasks found!";
 
-   setTimeout(() => {
-     taskList.textContent="";
-   }, 1000);
+    setTimeout(() => {
+      taskList.textContent = "";
+    }, 1000);
   } else {
     taskListArray.forEach((element) => {
       createNewListItemElement(element);

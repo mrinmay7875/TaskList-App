@@ -15,11 +15,16 @@
 
 body {
   /* background-color: #dfd3c3; */
-background: #ff00cc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #333399,
+      #ff00cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #333399,
+      #ff00cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .delete-task-btn {
@@ -37,17 +42,23 @@ background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, F
   float: right;
 }
 
-.delete-icon:hover{
+.delete-icon:hover {
   color: blue;
 }
 
 .footer {
   /* background-color: darkgray; */
 
-background: #bc4e9c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #f80759,
+      #bc4e9c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #f80759,
+      #bc4e9c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   margin: 0 auto;
   text-align: center;
@@ -72,12 +83,17 @@ background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, F
 }
 
 .main-container {
-background: #FFAFBD;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffafbd;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #ffc3a0,
+      #ffafbd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ffc3a0,
+      #ffafbd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-  
   min-height: 60vh;
   text-align: center;
 
@@ -100,12 +116,14 @@ background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, F
   padding: 5px 5px;
   color: blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .show-all-task-btn {
   margin: 5px 5px;
   font-family: "Cairo", sans-serif;
 }
+
 .show-all-task-btn:hover {
   background-color: rgb(15, 104, 15);
 }
@@ -116,6 +134,7 @@ background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, F
 
   margin: 5px 5px;
 }
+
 .task-input-field:focus {
   background-color: lightgrey;
 }
@@ -133,7 +152,28 @@ background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, F
   font-size: 1.2rem;
   text-align: left;
   margin: 10px 5px;
+
+  animation: addNewTask 1s forwards linear;
+
 }
+
+@keyframes addNewTask {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+
+
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #d8d3cd;
+  }
+}
+
 
 .task-list {
   display: flexbox;
@@ -142,3 +182,37 @@ background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, F
   justify-content: space-between;
   min-width: 50%;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 20%;
+  width: 40%;
+  border: solid black 2px;
+  top: 40%;
+  left: 30%;
+  background-color: pink;
+}
+
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+

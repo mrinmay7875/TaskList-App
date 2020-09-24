@@ -33,6 +33,23 @@
     <link rel="shortcut icon" href="/tasklist-icon.png" type="image/png" />
   </head>
   <body>
+    <!-- Overlay section -->
+    <div id="overlay"></div>
+    <!-- Modal section -->
+
+    <div class="modal">
+      <div class="modal_header">
+        <h3>
+          This will delete all the tasks. Press Yes to continue or Cancel to
+          cancel
+        </h3>
+        <div class="modal_contents">
+          <button type="submit" id="modal_yes_btn">Yes</button>
+          <button type="submit" id="modal_no_btn">NO</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Top container section -->
     <div class="main-container">
       <h1 class="main-app-heading">Task list App</h1>
