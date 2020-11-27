@@ -25,6 +25,8 @@ body {
       #333399,
       #ff00cc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .delete-task-btn {
@@ -41,12 +43,32 @@ body {
   left: 5%;
   float: right;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .delete-icon:hover {
-  color: blue;
+  /* color: blue; */
   cursor: pointer;
+  animation: addNewTask 0.1s forwards linear;
+
 }
+
+  @keyframes addNewTask {
+  /* 0% {
+    opacity: 0;
+  }
+
+  /* 50% {
+    opacity: 0.5;
+  } */ 
+
+  100% {
+    opacity: 1;
+    /* background-color: green; */
+  }
+}  
+
+
 
 .footer {
   /* background-color: darkgray; */
@@ -81,7 +103,9 @@ body {
 }
 
 .main-app-heading {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Titillium Web',
+  sans-serif;
+  font-size: 2.5rem;
 }
 
 .main-container {
@@ -104,62 +128,64 @@ body {
 
   box-shadow: 2px 2px 2px 2px #1132b6;
   border-radius: 10px;
+    box-shadow: 0 10.2px 22.7px -22px rgba(0, 0, 0, 0.026),
+    0 19.7px 43px -22px rgba(0, 0, 0, 0.029),
+    0 29.7px 61.6px -22px rgba(0, 0, 0, 0.036),
+    0 44.7px 84.9px -22px rgba(0, 0, 0, 0.055),
+    0 100px 181px -22px rgba(0, 0, 0, 0.12);
+
+
+
 }
 
-/* Media queries for mobile screen */
-@media screen and (max-width: 600px) {
-  .main-container {
-    margin: 3% 10%;
-  }
-}
 
 .newTaskContent {
-  margin: 10px 10px;
-  padding: 5px 5px;
-  color: blue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 .show-all-task-btn {
-  margin: 5px 5px;
-  font-family: "Cairo", sans-serif;
+    margin: 5px 5px;
+    font-family: "Cairo", sans-serif;
 }
 
 .show-all-task-btn:hover {
-  background-color: rgb(15, 104, 15);
+    background-color: rgb(15, 104, 15);
 }
 
 .task-input-field {
-  border: solid white 3px;
-  border-radius: 4px;
+    border: solid white 3px;
+    border-radius: 4px;
 
-  margin: 5px 5px;
+    margin: 5px 5px;
 }
 
 .task-input-field:focus {
-  background-color: lightgrey;
+   background-color: lightgrey;
 }
 
 .task-inputsection {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .task-list-item {
-  background-color: #d8d3cd;
-  border-radius: 4px;
+    background-color: #d8d3cd;
+    border-radius: 4px;
 
-  font-size: 1.2rem;
-  text-align: left;
-  margin: 10px 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 10px 5px;
 
-  animation: addNewTask 1s forwards linear;
+  /* animation: addNewTask 1s forwards linear; */
 
 }
 
-@keyframes addNewTask {
+/* @keyframes addNewTask {
   0% {
     opacity: 0;
   }
@@ -174,7 +200,7 @@ body {
     opacity: 1;
     background-color: #d8d3cd;
   }
-}
+} */
 
 
 .task-list {
@@ -196,25 +222,30 @@ body {
   background-color: pink;
 }
 
-#overlay {
-  position: fixed;
-  /* Sit on top of the page content */
-  display: none;
-  /* Hidden by default */
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
+
+/* Media queries for mobile screen */
+@media screen and (min-width: 360px) and (max-width: 578px) {
+  
+
+
+  .main-container {
+    /* background-color: #fff; */
+    margin: 3% 10%;
+    box-shadow: 0 10.2px 22.7px -22px rgba(0, 0, 0, 0.026),
+      0 19.7px 43px -22px rgba(0, 0, 0, 0.029),
+      0 29.7px 61.6px -22px rgba(0, 0, 0, 0.036),
+      0 44.7px 84.9px -22px rgba(0, 0, 0, 0.055),
+      0 100px 181px -22px rgba(0, 0, 0, 0.12);
+
+  }
+
+  .delete-icon {
+    position: relative;
+    left: 10%;
+    float: right;
+    cursor: pointer;
+  }
+
+
+
 }
-
-
