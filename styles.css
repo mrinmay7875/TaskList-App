@@ -40,10 +40,12 @@ body {
   position: relative;
   left: 5%;
   float: right;
+  cursor: pointer;
 }
 
 .delete-icon:hover {
   color: blue;
+  cursor: pointer;
 }
 
 .footer {

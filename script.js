@@ -23,7 +23,7 @@ function fetchTasksFromLocalstorage() {
 //This function takes task content and creates <li> element with the delete icon and inserts it into the tasklist
 function createNewListItemElement(taskContent) {
   let newListItemElement = document.createElement("li");
-  newListItemElement.className = "task-list-item";
+  newListItemElement.className = "  animate__animated animate__zoomInDown task-list-item";
   //Create a text node and append into the <span> element, here the actual task content will be stored in span element
   let newTextNode = document.createTextNode(taskContent);
   let newSpanElement = document.createElement("span");
@@ -70,6 +70,7 @@ function deleteAllTasks() {
   //Checking if there is any task to be deleted
   if (fetchTasksFromLocalstorage().length != 0) {
     if (confirm("Warning! This will delete all the tasks. Are you sure ?")) {
+      
       taskList.innerHTML = "";
       localStorage.clear();
       taskInputField.value = "";
@@ -82,8 +83,16 @@ function deleteAllTasks() {
 //Delete a single task
 function deleteSingleTask(event) {
 
+// event.target.className="animate__animated animate__bounceOutRight"
+//  event.target.parentElement.remove();
+event.target.parentElement.className="animate__animated animate__fadeOutRightBig";
 
- event.target.parentElement.remove();
+setTimeout(()=>{
+  event.target.parentElement.remove();
+
+},160)
+
+
 
 
 }
