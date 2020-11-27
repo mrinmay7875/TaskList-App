@@ -6,10 +6,12 @@
     <title>Task List App</title>
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
-      rel="stylesheet"
-    />
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
       rel="stylesheet"
@@ -39,7 +41,7 @@
     <!-- Inserting favicon -->
     <link rel="shortcut icon" href="/tasklist-icon.png" type="image/png" />
   </head>
-  <body>
+  <body >
     <!-- Overlay section -->
     <!-- Modal section -->
 
@@ -57,13 +59,13 @@
     </div>
 
     <!-- Top container section -->
-    <div class="main-container">
-      <h1 class="main-app-heading">Task list App</h1>
+    <div class="main-container animate__animated animate__fadeIn ">
+      <h1 class="main-app-heading animate__animated animate__slideInDown">Task List App</h1>
 
       <!-- Task input field -->
-      <div class="task-inputsection">
+      <div class="task-inputsection  ">
         <input
-          class="task-input-field"
+          class="task-input-field animate__animated animate__zoomIn"
           type="text"
           name=""
           id=""
@@ -71,15 +73,15 @@
         />
 
         <!-- Add task button -->
-        <button class="add-task-btn btn btn-primary" type="submit">
+        <button class="add-task-btn btn btn-primary animate__animated animate__zoomIn" type="submit">
           Add task
         </button>
         <!-- Clear Task button -->
-        <button class="delete-task-btn btn btn-danger" type="submit">
+        <button class="delete-task-btn btn btn-danger animate__animated animate__zoomIn" type="submit">
           Delete All task
         </button>
         <!-- Show All task button -->
-        <button class="show-all-task-btn btn btn-success" type="submit">
+        <button class="show-all-task-btn btn btn-success animate__animated animate__zoomIn" type="submit">
           Show All task
         </button>
       </div>
@@ -87,7 +89,7 @@
       <!-- List of task section -->
       <div class="list-of-task-section">
         <!-- //List of tasks -->
-        <h3 class="task-list-heading">List of tasks</h3>
+        <h3 class="task-list-heading animate__animated animate__zoomIn">List of tasks</h3>
         <ul class="task-list">
           <!-- <li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li>
             <li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li><li class="task-list-item">first task item<i class="far fa-trash-alt fa-lg delete-icon"></i></li> -->
@@ -96,7 +98,7 @@
     </div>
     <!-- Footer section -->
 
-    <footer class="footer">Made with ❤️ by Mrinmay Santra</footer>
+    <footer class="footer ">Made with ❤️ by Mrinmay</footer>
 
     <script src="/script.js"></script>
   </body>
