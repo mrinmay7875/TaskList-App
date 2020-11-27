@@ -7,7 +7,22 @@
 .add-task-btn {
     margin: 5px 5px;
     font-family: "Cairo", sans-serif;
+   animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
 }
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 
 .add-task-btn:hover {
     background-color: #033653;
@@ -32,7 +47,21 @@ body {
 .delete-task-btn {
     margin: 5px 5px;
     font-family: "Cairo", sans-serif;
-}
+   animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s both;
+   }
+
+   @keyframes scale-in-center {
+     0% {
+       transform: scale(0);
+       opacity: 1;
+     }
+
+     100% {
+       transform: scale(1);
+       opacity: 1;
+     }
+   }
+
 
 .delete-task-btn:hover {
    background-color: #7a0000;
@@ -44,19 +73,47 @@ body {
     float: right;
     cursor: pointer;
     margin-top: 5px;
+
 }
 
 .delete-icon:hover {
   /* color: blue; */
   cursor: pointer;
-  animation: addNewTask 0.1s forwards linear;
-
+animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
-  /* @keyframes addNewTask {
- 
-}   */
+@keyframes shake-lr {
 
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+
+    10% {
+      transform: rotate(8deg);
+    }
+
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+
+    80% {
+      transform: rotate(-8deg);
+    }
+
+    90% {
+      transform: rotate(8deg);
+    }
+}
 
 
 .footer {
@@ -89,8 +146,21 @@ footer:hover {
 .main-app-heading {
     font-family: 'Titillium Web', sans-serif;
     font-size: 2.5rem;
+     animation: rotate-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+
+@keyframes rotate-in-center {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
 
 
 .main-container {
@@ -105,7 +175,7 @@ footer:hover {
         #ffafbd);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    min-height: 60vh;
+    min-height: 55vh;
     text-align: center;
 
     margin: 5% 25%;
@@ -113,15 +183,14 @@ footer:hover {
 
     box-shadow: 2px 2px 2px 2px #1132b6;
     border-radius: 10px;
-      box-shadow: 0 10.2px 22.7px -22px rgba(0, 0, 0, 0.026),
+    box-shadow: 0 10.2px 22.7px -22px rgba(0, 0, 0, 0.026),
       0 19.7px 43px -22px rgba(0, 0, 0, 0.029),
       0 29.7px 61.6px -22px rgba(0, 0, 0, 0.036),
       0 44.7px 84.9px -22px rgba(0, 0, 0, 0.055),
       0 100px 181px -22px rgba(0, 0, 0, 0.12);
+    }
 
 
-
-}
 
 
 .newTaskContent {
@@ -135,7 +204,20 @@ footer:hover {
 .show-all-task-btn {
     margin: 5px 5px;
     font-family: "Cairo", sans-serif;
-}
+   animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s both;
+   }
+
+   @keyframes scale-in-center {
+     0% {
+       transform: scale(0);
+       opacity: 1;
+     }
+
+     100% {
+       transform: scale(1);
+       opacity: 1;
+     }
+   }
 
 .show-all-task-btn:hover {
     background-color: rgb(15, 104, 15);
@@ -144,9 +226,49 @@ footer:hover {
 .task-input-field {
     border: solid white 3px;
     border-radius: 4px;
-
     margin: 5px 5px;
-}
+   /* animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both; */
+animation: shake-bottom 1.1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both 3.5s;
+
+   }
+
+
+   @keyframes shake-bottom {
+
+     0%,
+     100% {
+       transform: rotate(0deg);
+       transform-origin: 50% 100%;
+     }
+
+     10% {
+       transform: rotate(2deg);
+     }
+
+     20%,
+     40%,
+     60% {
+       transform: rotate(-4deg);
+     }
+
+     30%,
+     50%,
+     70% {
+       transform: rotate(4deg);
+     }
+
+     80% {
+       transform: rotate(-2deg);
+     }
+
+     90% {
+       transform: rotate(2deg);
+     }
+   }
+
+
+
+
 
 .task-input-field:focus {
    background-color: lightgrey;
@@ -156,6 +278,20 @@ footer:hover {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+   animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
+
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .task-list-item {
